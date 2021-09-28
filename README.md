@@ -3,10 +3,10 @@
 Architecture app (MVP):  
   
 Implemented:
-
-Navigation architecture
-Retrofit 2
-Coroutines
-Landscape layouts  
-RecyclerView
+  
+1. Navigation architecture  
+2. Retrofit 2  
+3. Coroutines  
+4. Landscape layouts  
+5. RecyclerView
 
