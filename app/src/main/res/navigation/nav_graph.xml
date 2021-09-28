@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentFirst">
+
+    <fragment
+        android:id="@+id/fragmentFirst"
+        android:name="ru.denis.appforsequenia.filmslistfragment.FilmsListFragment"
+        android:label="@string/first_fragment_label">
+        <action
+            android:id="@+id/action_FilmsListFragment_to_DescriptionFragment"
+            app:destination="@id/DescriptionFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/DescriptionFragment"
+        android:name="ru.denis.appforsequenia.descriptionfragment.DescriptionFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/description">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="engName"
+            app:argType="string" />
+        <argument
+            android:name="year"
+            app:argType="string" />
+        <argument
+            android:name="rank"
+            app:argType="string" />
+
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="img"
+            app:argType="string" />
+    </fragment>
+</navigation>
